@@ -1,16 +1,14 @@
 import Quiz from "./Components/Quiz";
 import Login from "./Components/Login";
-import { BrowserRouter,Route,Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-  
-   <BrowserRouter>
+    <BrowserRouter>
       <Routes>
-      
-        <Route path="/" element={<Login />}>
-          <Route path="Quiz" element={<Quiz />} />
-        </Route>
+        {/* <Route path="/" element={<Login />}> */}
+        <Route path="/" element={<Quiz />} />
+        {/* </Route> */}
       </Routes>
     </BrowserRouter>
   );
